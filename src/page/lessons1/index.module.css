@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #9df1ff;
+}
+
+.miniBox {
+    height: 50px;
+    width: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    margin: 24px;
+    background-color: #ffffff;
+}
+
+.flex {
+    display: flex;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.txt {
+    margin-left: 24px;
+    font-size: 38px;
+}

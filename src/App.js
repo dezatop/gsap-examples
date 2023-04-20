@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from "react-router-dom";
+import Main from "./page/main";
+import './App.css'
+import TransitionPage from "./page/transition";
+import Error from "./page/Error";
+import ThreePage from "./page/three";
+import Lessons1 from "./page/lessons1";
 
 function App() {
+  // const [value, setValue] = useState('test')
+  // const {result, run} = useWebWorker((e) => 'result')
+  // const onclickH1 = () => {
+  //   run(value)
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Lessons1/>} errorElement={<Error/>}/>
+      <Route path='/main' element={<Main/>} errorElement={<Error/>}/>
+      <Route path='/three' element={<ThreePage/>}/>
+      <Route path='/transition' element={<TransitionPage/>}/>
+    </Routes>
   );
 }
 
